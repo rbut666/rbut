@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <div id="app">
+        <h1> {{msg}} </h1>
+        <ul class="panel">
+            <li><span>username：</span> <input type="text" name="username" id="" v-model='username'></li>
+            <li><span>password：</span> <input type="password" name="password" id="" v-model='password'></li>
+            <!-- <li><span>email：</span> <input type="email" v-model='email'></li> -->
+            <li>
+                <div class="btn_box">
+                    <div class="sign" v-on:click='signup'>登陆</div>
+                </div>
+            </li>
+        </ul>
+        <div class="box">
+            <h2> 返回消息 </h2>
+            <div class="content">
+                {{ return_msg }}
+            </div>
+        </div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                msg: 'login',
+                username: '',
+                password: '',
+                // email: '',
+                return_msg: ''
+            },
+            methods: {
+                signup() {
+                    var params = new URLSearchParams()
+                    params.append('username', this.username)
+                    params.append('password', this.password)
+                    axios.post('./api/login.php', params).then(res=> {
+                        this.return_msg = res.data
+                        console.log(res)
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+</html>

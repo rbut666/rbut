@@ -1,0 +1,54 @@
+# 在vue中使用 css过渡效果
+
+## 给需要实现效果的元素 添加name
+
+> 再在new Vue中 添加初始值
+
+``` html
+  <div id='example'>
+        <button @click='show = !show'>
+            toggle render
+        </button>
+        <transition name='slide-fade'>
+            <p v-if='show'>hello</p>
+        </transition>
+    </div>
+```
+
+``` js
+    new Vue({
+        el:'#example',
+        data:{
+            show:true
+        }
+    })
+```
+
+> 在属性中声明js钩子
+
+``` html
+<transition
+    v-on:before-enter='beforeEnter'
+    v-on:enter='enter'
+    v-on:after-enter='afterEnter'
+    v-on:enter-cancelled='enterCancelled'
+>
+</transition>
+```
+
+``` js
+    new Vue({
+        el:'#example',
+        method:{
+            boforeEnter:function(el){
+
+            },
+            enter:function(el,done){
+                done()
+            }
+        }
+    })
+```
+
+> <!-- 混入 -->
+> 同名钩子函数混合成一个数组

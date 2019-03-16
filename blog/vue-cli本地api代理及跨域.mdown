@@ -1,0 +1,59 @@
+# 在vue-cli创建的项目下 设置本地环境的api代理设置  解决跨域
+
+## 原有 项目中config目录下 index.js 中 dev的内容
+
+```package.json
+dev: {
+    env: require('./dev.env'),
+    port: 8080,
+    autoOpenBrowser: true,
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    proxyTable: {},
+    cssSourceMap: false
+    }
+```
+
+### 服务器提供的接口如果长[这样](https://www.exaple.com/server_new/login)
+
+> 在config目录下新建 proxyConfig.js
+
+``` package.json
+module.exports = {
+ proxy: {
+   '/apis': {    //将www.exaple.com印射为/apis
+     target: 'https://www.exaple.com',  // 接口域名
+     changeOrigin: true,  //是否跨域
+     pathRewrite: {
+           '^/apis': ''   //需要rewrite的,
+             }
+      }
+     }
+ }
+```
+
+> 再在index.js引入proxyConfig.js
+
+``` js
+var proxyConfig = require('./proxyConfig')
+  index.js中的dev 修改成
+dev: {
+   env: require('./dev.env'),
+   port: 8080,
+   autoOpenBrowser: true,
+   assetsSubDirectory: 'static',
+   assetsPublicPath: '/',
+   proxyTable: proxyConfig.proxy,
+   cssSourceMap: false
+   }
+```
+
+> 重启项目
+
+``` bash
+npm run dev
+```
+
+> 修改本地host文件
+
+127.0.0.1    www.exaple.com
