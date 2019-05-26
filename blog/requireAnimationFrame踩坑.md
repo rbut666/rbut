@@ -1,3 +1,9 @@
+---
+title: requireAnimationFrame
+date: 2018-07-4 12:04:53
+tags: js javascript
+---
+
 # requireAnimationFrame
 
 ## window自带api 了解方式
@@ -86,7 +92,7 @@ var left = -400
 function renderLoop() {
     // 此处的 x 为 当列表滚动到消失不见 的 ul 的 right 值 即 显示框的宽度
     if(left === x) {
-        // 当列表滚动到看不见 再继续 从最右边 开始滚动 重置 left的值
+        // 当列表滚动到看不见 再继续 从最右边 开始滚动 重置 left的值 此处重新赋值给 left 的必须为实际的 数字 不可以是变量 否则 在重新来一轮滚动的时候 会出现 列表 闪烁
         left = -400
     }
     // 数字+1 表示每次执行 right的变化量 数值越高 速度越快 至于 += 可以自己换成 -= 去看看效果

@@ -1,3 +1,9 @@
+---
+title: 在vue-cli创建的项目下 设置本地环境的api代理设置  解决跨域
+date: 2018-07-17 12:25:53
+tags: js javascript vue
+---
+
 # 在vue-cli创建的项目下 设置本地环境的api代理设置  解决跨域
 
 ## 原有 项目中config目录下 index.js 中 dev的内容

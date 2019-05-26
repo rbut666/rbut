@@ -1,3 +1,9 @@
+---
+title: clipboard.js 剪切板插件的使用
+date: 2018-06-26 22:04:53
+tags:
+---
+
 # clipboard.js 剪切板插件的使用
 
 [clipboard.js](https://clipboardjs.com/)

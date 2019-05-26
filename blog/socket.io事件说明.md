@@ -1,3 +1,9 @@
+---
+title: socket.io 事件说明
+date: 2018-07-07 12:01:53
+tags: js javascript socket
+---
+
 # socket.io 事件说明
 
 包括原生事件与自定义事件

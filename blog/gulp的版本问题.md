@@ -1,3 +1,10 @@
+---
+title: gulp的版本问题
+date: 2018-06-29 12:04:53
+tags: gulp
+---
+
+
 # gulp的版本问题
 
 ## gulp -v 查看gulp版本

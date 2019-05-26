@@ -1,3 +1,9 @@
+---
+title: 本地配置 webpack 热更新的 简易配置
+date: 2018-07-08 12:04:53
+tags: js javascript webpack
+---
+
 # 本地配置 webpack 热更新的 简易配置
 
 ## 某项目的目录结构 [参考](https://github.com/kingvid-chan/webpack2-lessons/tree/master/lesson2)

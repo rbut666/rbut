@@ -1,3 +1,9 @@
+---
+title: 使用echarts在vue项目中创建图表
+date: 2018-07-09 12:21:53
+tags: js javascript echart vue
+---
+
 # 使用echarts在vue项目中创建图表
 
 > 安装echarts包

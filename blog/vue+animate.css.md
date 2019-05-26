@@ -1,3 +1,9 @@
+---
+title: vue 结合 animate.css --备忘
+date: 2018-07-12 12:21:53
+tags: js javascript vue animate.css
+---
+
 # vue 结合 animate.css --备忘
 
 > animate.css [官网](https://daneden.github.io/animate.css/)

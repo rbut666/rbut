@@ -1,3 +1,9 @@
+---
+title: webpack 基本使用
+date: 2018-07-07 12:04:53
+tags: js javascript webpack
+---
+
 # webpack 基本使用 整理常用部分 [来自](https://webpack.docschina.org)
 
 > 2个配置文件  package.json  webpack.config.js

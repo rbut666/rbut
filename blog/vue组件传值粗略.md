@@ -1,8 +1,15 @@
+---
+title: Vue组件 传值易错的细节
+date: 2018-07-6 12:04:53
+tags: js javascript vue
+---
+
 # Vue组件 传值易错的细节
 
 ## 使用vue组件的2类
 
 > 在单独的html 引入vue.js后 在页面内 插入组件 render方式
+
 > 在使用vue-cli构建的app里面 使用.vue 的组件
 
 ----------

@@ -1,3 +1,9 @@
+---
+title: 在vue中使用 css过渡效果
+date: 2018-07-17 12:27:53
+tags: js javascript vue
+---
+
 # 在vue中使用 css过渡效果
 
 ## 给需要实现效果的元素 添加name

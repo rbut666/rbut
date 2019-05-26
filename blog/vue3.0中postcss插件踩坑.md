@@ -1,3 +1,9 @@
+---
+title: Vue 3.0 在移动端应用中使用 rem 布局的注意点
+date: 2018-07-09 12:21:53
+tags: js javascript vue
+---
+
 # Vue 3.0 在移动端应用中使用 rem 布局的注意点
 
 > 想多了解postcss的话点击[这里](https://github.com/whidy/postcss-study)

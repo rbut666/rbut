@@ -1,3 +1,9 @@
+---
+title: VUE 3.0 配置文件 vue.config.js
+date: 2018-07-11 12:21:53
+tags: js javascript vue
+---
+
 # VUE 3.0 配置文件 vue.config.js
 
 ## 改变默认配置 在项目根目录下新建 vue.config.js 自定义vue配置

@@ -1,3 +1,9 @@
+---
+title: Vue-cli 3.0 + Socket.io 配置记录
+date: 2018-07-14 12:21:53
+tags: js javascript vue socket
+---
+
 # Vue-cli 3.0 + Socket.io 配置记录
 
 ## 创建
@@ -8,7 +14,7 @@
 vue create project-name
 ```
 
-我是手动安装了下列依赖：
+手动安装了下列依赖：
 
 - Babel
 - Router
@@ -52,7 +58,7 @@ Object.assign(Vue.prototype, {
 然后就可以用这样的形式来请求数据
 
 ```js
-this.axios.get('/api/file').then()
+this.axios.get('/user/list/?r=1').then()
 ```
 
 ### 跨域问题
@@ -174,7 +180,7 @@ export default store
 既然可以在外部调用，那么就可以放在 socket.io 的各个事件中执行了，例如
 
 ```js
-const socket = io('https://serversite.com/')
+const socket = io('your-server-site')
 
 socket.on('connect', () => {
   store.dispatch('socks/sayHello')

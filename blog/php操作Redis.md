@@ -1,3 +1,9 @@
+---
+title: Php使用Redis数据库
+date: 2018-07-3 12:04:53
+tags: php
+---
+
 # Php使用Redis数据库
 
 ## [link](https://www.jianshu.com/p/68b7114a1d70)
