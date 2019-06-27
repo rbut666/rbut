@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./qrcode.min.js"></script>
+    <title>js qrcode</title>
+</head>
+<body>
+    <div id="qrcode"></div>
+    <script>
+        // new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie")
+        // var qrcode = new QRCode(
+        //     document.getElementById("qrcode"),
+        //     {
+        //     content: 'http://jindo.dev.naver.com/collie',
+        //     width: 256,
+        //     height: 256,
+        //     color: "#000000",
+        //     background: "#ffffff",
+        //     ecl: "L"
+        //     });
+
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                text: "http://s.rbut.cc/2",
+                width: 128,
+                height: 128,
+                colorDark : "#009",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+    </script>
+</body>
+</html>
